@@ -48,7 +48,7 @@ body{
 }
 .header{
     font-size: 3rem;
-    font-family: 'Overpass', sans-serif;
+    font-family: 'Big shoulders Display';
     font-weight: bolder;
     color: white;
     text-transform: uppercase;
@@ -69,12 +69,44 @@ body{
     border-radius: 3rem; 
     font-size: 1.5rem;
 }
+
 .one>.learnMore{
     color: var(--Bright-orange);
+}
+.one>.learnMore:hover{
+    color:white;
+    background-color: var(--Bright-orange);
+    border: 4px white solid;
 }
 .two>.learnMore{
     color: var(--Dark-cyan);
 }
+.two>.learnMore:hover{
+   background-color:  var(--Dark-cyan);
+    color: white;
+    border: 4px white solid;
+}
 .three>.learnMore{
     color: var(--Very-dark-cyan);
+}
+.three>.learnMore:hover{
+    background-color: var(--Very-dark-cyan);
+    color: white;
+    border: 4px white solid;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .container{
+        width: 80%;
+        grid-template-columns: 1fr ;
+        margin-bottom: 3rem;
+    }
+    .one{
+        border-radius:1rem 1rem 0 0 ;
+    }
+    .three{
+        border-radius: 0 0 1rem 1rem ;
+    }
 }
